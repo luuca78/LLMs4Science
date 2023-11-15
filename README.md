@@ -7,7 +7,7 @@ package alongside recording all our interactions with the tools and our evaluati
 
 ## Structure
 
-The logs of our interactions with the tools are structured by use case. They contain two logs for each of our two authors conducting the experiments.
+The logs of our interactions with the tools are structured by use case. They contain two logs for each of our two authors conducting the experiments. The code generation folder also contains our code to conduct the performance benchmark.
 - [Code_Generation](https://github.com/luuca78/LLMs4Science/tree/main/Code_Generation)
 - [Data Analysis](https://github.com/luuca78/LLMs4Science/tree/main/Data_Analysis)
 - [Data Visualization](https://github.com/luuca78/LLMs4Science/tree/main/Data_Visualization)
