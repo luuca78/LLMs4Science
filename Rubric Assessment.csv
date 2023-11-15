@@ -1,0 +1,32 @@
+,,,,,,,,,,,,,,,,
+Matrix Multiplication,Correctness,,,Comments,Effectiveness,,,,Comprehensability,,,Comments,,Number of Stars,,Overall Rating
+,Compiles and Delivers Correct Results (Even if we had to ask the tool for error correction),Compiles and Delivers Correct Results on first attempt,Considers Edge Cases,,Benchmark (ms),Control implementation without multithreading (ms),Speed-up,Number of Stars,Comments are describing correct behaviour and are helpful for understanding the code,"Answer includes helpfull additions, hints",Length of code is shorter than the mean length across all tools,,,,,
+Tool,,,,,,,,,,,,,,,,
+"ChatGTP 3,5",TRUE,TRUE,TRUE,,"470,6","2997,4","6,369315767",3,FALSE,TRUE,FALSE,,4,7,,4
+"ChatGTP 4,0",TRUE,TRUE,TRUE,Gets ArrayOutOfBounds Exception. But only for empty Matrices.,"578,6","2860,2","4,943311441",2,FALSE,TRUE,FALSE,,4,6,,3
+Bing AI,TRUE,TRUE,TRUE,Gets ArrayOutOfBounds Exception. But only for empty Matrices.,"1898,6","2970,8","1,564731908",1,FALSE,FALSE,TRUE,,4,5,,3
+Google Bard,TRUE,FALSE,FALSE,Multiple errors. Wrong results.,"647,8","2912,1","4,495368941",2,TRUE,TRUE,FALSE,,3,5,,3
+You Chat,TRUE,TRUE,TRUE,,"445,6","2927,4","6,56956912",3,FALSE,FALSE,TRUE,"YouChats code was so short and compact, that you don't really need comments for that code. Explanation in the answer on the prompt would still be helpful",4,7,,4
+GitLab duo,FALSE,FALSE,FALSE,,-,-,-,0,FALSE,FALSE,FALSE,Is only able to produce Code for normal Matrix Multiplication of 2 Matrices. Multi-threading is not possible to include no matter how you engineer the prompt. (In my opinion the tool is also very counter unintuitive to use),0,0,,0
+GitHub Copilot,TRUE,TRUE,FALSE,,"515,4",2968,"5,758634071",2,FALSE,FALSE,TRUE,"Purpose is only Code generation, so the Tool does not provide any additional hints",3,5,,3
+,,,,,,,,,,,,,Best Possible,9,,5
+,,,,,,,,,,,,,,,,
+Data Analysis,Correctness,,,,Effectiveness,,,,Comprehensability,,,,,,,
+,No larger errors that the tool was not able to fix right away,Compiles and Delivers Correct Results (Even if we had to ask the tool for error correction),Compiles and Delivers Correct Results on first attempt,,Analysis is not misleading,Analysis is (visually) well structured ,Upper Bound Execution Time (s),Comments,Comments are describing correct behaviour and are helpful for understanding the code,"Answer includes helpfull additions, hints",Length of code is shorter than the mean length across all tools,,,,,
+Tool,,,,,,,< 1 second,,,,,,,,,
+,,,,,,,,,,,,,,,,-1 for miselading
+"ChatGTP 3,5",TRUE,TRUE,FALSE,Mohamed's worked perfect. Luca's had major error in Query 1,TRUE,TRUE,TRUE,,TRUE,TRUE,TRUE,,,8,4,
+"ChatGTP 4,0",TRUE,TRUE,TRUE,,TRUE,TRUE,TRUE,,TRUE,TRUE,FALSE,,,8,4,
+Bing AI,TRUE,TRUE,FALSE,"Mohamed and Luca had small Data type error, Luca had small misunderstanding with Query but immediate fix",FALSE,TRUE,TRUE,Misleading answer for Query 1,TRUE,TRUE,TRUE,,,7,4,3
+Google Bard,TRUE,TRUE,FALSE,Mohamed and Luca had Data type error.,FALSE,TRUE,TRUE,"Queries 3,4 output wrong results.",TRUE,TRUE,FALSE,,,6,3,2
+You Chat,TRUE,TRUE,FALSE,Mohamed and Luca had small Data type error.,TRUE,TRUE,TRUE,,FALSE,TRUE,FALSE,,,6,3,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+Data Visualisation,Correctness,,,Comments,Effectiveness,,,,Comprehensability,,,,,,,
+Tool,No larger errors that the tool was not able to fix right away,Compiles and Delivers Correct Results (Even if we had to ask the tool for error correction),Compiles and Delivers Correct Results on first attempt,,Graphs are not misleading.,"Graphs are legible (font size, colors, shapes) and not overly complex. ","Graphs use available space approriately (e.g., legend is in the graph if there is available whitespace, axis steps are well balanced.)","Graph includes additional helpful indicators, such as regression lines for showcasing trends. ",Comments are describing correct behaviour,"Answer includes helpfull additions, hints",Length of code is shorter than the mean length across all tools,,,,,
+"ChatGTP 3,5",TRUE,TRUE,TRUE,,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,,,7,,4
+"ChatGTP 4,0",TRUE,TRUE,TRUE,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,10,,5
+Bing AI,TRUE,FALSE,FALSE,,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,4,,2
+Google Bard,FALSE,FALSE,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,2,,1
+You Chat,TRUE,TRUE,FALSE,,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,,,6,,3
